@@ -12303,7 +12303,7 @@ SUVORK5CYII=
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="preprocess-the-data">preprocess the data<a class="anchor-link" href="#preprocess-the-data">&#182;</a></h3><ul>
-<li>Converting to grayscale - This worked well for Sermanet and LeCun as described in their traffic sign classification article. It also helps to reduce training time, which was nice when a GPU wasn't available.</li>
+<li>Converting to grayscale -  That color should not make a difference for the classifier (a human can detect the signs using other features than color).This worked well for Sermanet and LeCun as described in their traffic sign classification article. It also helps to reduce training time, which was nice when a GPU wasn't available.</li>
 <li>Normalizing the data to the range (-1,1) - This was done using the line of code X_train = (X_train - 128)/128. The resulting dataset mean wasn't exactly zero, but it was reduced from around 82 to roughly -0.35. I chose to do this mostly because it was suggested in the lessons and it was fairly easy to do. <a href="http://stats.stackexchange.com/questions/185853/why-do-we-need-to-normalize-the-images-before-we-put-them-into-cnn">This site</a> has an explanation, the gist of which is that having a wider distribution in the data would make it more difficult to train using a singlar learning rate. Different features could encompass far different ranges and a single learning rate might make some weights diverge.</li>
 </ul>
 
