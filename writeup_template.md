@@ -134,5 +134,5 @@ Here are five German traffic signs that I found on the web:
 ![alt text][image4] ![alt text][image5] ![alt text][image6] 
 ![alt text][image7] ![alt text][image8]
 
-The Accuracy is 100%, maybe the pictures used for example is easier to be clasified.
+The Accuracy is 100%, maybe the pictures used for example is easier to be classified.
 In the future, I will download much more pictures, test the model and dive into it deeper.
